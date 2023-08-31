@@ -2750,8 +2750,8 @@ inline void HasResultAndType(Op opcode, bool *hasResult, bool *hasResultType) {
     case Op::OpFixedExpINTEL: *hasResult = true; *hasResultType = true; break;
     case Op::OpPtrCastToCrossWorkgroupINTEL: *hasResult = true; *hasResultType = true; break;
     case Op::OpCrossWorkgroupCastToPtrINTEL: *hasResult = true; *hasResultType = true; break;
-    case Op::OpReadPipeBlockingINTEL: *hasResult = true; *hasResultType = true; break;
-    case Op::OpWritePipeBlockingINTEL: *hasResult = true; *hasResultType = true; break;
+    case Op::OpReadPipeBlockingINTEL: *hasResult = false; *hasResultType = false; break;
+    case Op::OpWritePipeBlockingINTEL: *hasResult = false; *hasResultType = false; break;
     case Op::OpFPGARegINTEL: *hasResult = true; *hasResultType = true; break;
     case Op::OpRayQueryGetRayTMinKHR: *hasResult = true; *hasResultType = true; break;
     case Op::OpRayQueryGetRayFlagsKHR: *hasResult = true; *hasResultType = true; break;

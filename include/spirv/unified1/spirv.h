@@ -2754,8 +2754,8 @@ inline void SpvHasResultAndType(SpvOp opcode, bool *hasResult, bool *hasResultTy
     case SpvOpFixedExpINTEL: *hasResult = true; *hasResultType = true; break;
     case SpvOpPtrCastToCrossWorkgroupINTEL: *hasResult = true; *hasResultType = true; break;
     case SpvOpCrossWorkgroupCastToPtrINTEL: *hasResult = true; *hasResultType = true; break;
-    case SpvOpReadPipeBlockingINTEL: *hasResult = true; *hasResultType = true; break;
-    case SpvOpWritePipeBlockingINTEL: *hasResult = true; *hasResultType = true; break;
+    case SpvOpReadPipeBlockingINTEL: *hasResult = false; *hasResultType = false; break;
+    case SpvOpWritePipeBlockingINTEL: *hasResult = false; *hasResultType = false; break;
     case SpvOpFPGARegINTEL: *hasResult = true; *hasResultType = true; break;
     case SpvOpRayQueryGetRayTMinKHR: *hasResult = true; *hasResultType = true; break;
     case SpvOpRayQueryGetRayFlagsKHR: *hasResult = true; *hasResultType = true; break;
